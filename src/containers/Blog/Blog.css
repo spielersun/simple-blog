@@ -1,0 +1,53 @@
+.SectionNew {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+
+.SectionAll {
+    display: flow-root;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.SectionPost {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    float:right;
+}
+
+.SpawnMore {
+    width:100%;
+}
+
+.SpawnMore label {
+    display: block;
+    color: grey;
+}
+
+.SpawnMore button.SpawnBig {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.SpawnMore button.SpawnBig:hover,
+.SpawnMore button.SpawnBig:active {
+    color: white;
+    background-color: black;
+}

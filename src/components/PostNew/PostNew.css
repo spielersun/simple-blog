@@ -1,0 +1,45 @@
+.PostNew {
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.PostNew label {
+    display: block;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.PostNew input,
+.PostNew textarea,
+.PostNew select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    outline: none;
+    font: inherit;
+    margin: auto;
+}
+
+.PostNew button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    width: 20%;
+    float:right;
+    padding: 5px 0px;
+    margin: 10px 0px;
+}
+
+.PostNew button:hover,
+.PostNew button:active {
+    color: white;
+    background-color: black;
+}

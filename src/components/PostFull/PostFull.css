@@ -1,0 +1,48 @@
+.PostFull {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+}
+
+.PostFull h1{
+    padding:0px 20px;
+    font-size:30px;
+}
+
+.PostFull .Content{
+    font-size:20px;
+    padding: 0px 10px;
+}
+
+.Comments{
+    float: left;
+}
+.Edit {
+    width:100%;
+}
+
+.CommonButton label {
+    display: block;
+    color: grey;
+}
+
+.CommonButton {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    width: 20%;
+    float:right;
+    margin: 10px;
+    padding: 5px 0px;
+}
+
+.CommonButton:hover,
+.CommonButton:active {
+    color: white;
+    background-color: black;
+}

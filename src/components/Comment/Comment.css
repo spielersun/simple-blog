@@ -1,0 +1,19 @@
+.Comment {
+    padding: 0px 5px;
+    text-align: left;
+    margin: 5px 10px;
+    color:black;
+    text-align:left;
+}
+
+.Comment .Title {
+    margin: 5px 0;
+    font-size:12px;
+    color: #150063;
+}
+
+.Comment .Message {
+    margin: 0px 0px 10px 0px;
+    font-size:11px;
+    color: #737373;
+}

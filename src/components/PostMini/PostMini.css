@@ -1,0 +1,26 @@
+.PostMini {
+    width: 100%;
+    padding: 10px 5px;
+    text-align: left;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.PostMini:hover,
+.PostMini:active {
+    background-color: #C0DDF5;
+}
+
+.PostMini h3{
+    font-size:14px;
+    margin:5px 0px;
+}
+
+.Text {
+    font-size:12px;
+    margin: 5px 0;
+    color: gray;
+}

@@ -1,0 +1,12 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+@media (min-width: 1001px){
+  body{
+      width: 1000px;
+  }
+}
