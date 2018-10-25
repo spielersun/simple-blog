@@ -49,7 +49,7 @@ class Blog extends Component {
                 return <PostMini 
                     key={post.id} 
                     title={post.title} 
-                    body={post.body}
+                    body={post.body.slice(0, 100)}
                     clicked={() => this.postSelectedHandler(post.id)} />;
             });
         };
