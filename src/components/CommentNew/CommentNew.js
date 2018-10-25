@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import axios from '../../axios';
-import './PostNew.css';
+import './CommentNew.css';
 
 class PostNew extends Component {
     state = {
         title: '',
-        content: '',
-        author: ''
+        content: ''
     }
 
     postDataHandler = () => {
         const data = {
             title: this.state.title,
-            body: this.state.content,
-            author: this.state.author
+            body: this.state.content
         };
-        axios.post('posts/', data)
+        axios.post('comments/', data)
         .then(response => {
             console.log(response);
         });
@@ -23,18 +21,10 @@ class PostNew extends Component {
 
     render () {
         return (
-            <div className="PostNew">
-                <h1>Add a Post</h1>
-                <label>Title</label>
+            <div className="CommentNew">
                 <input type="text" value={this.state.title} onChange={(event) => this.setState({title: event.target.value})} />
-                <label>Content</label>
                 <textarea rows="4" value={this.state.content} onChange={(event) => this.setState({content: event.target.value})} />
-                <label>Author</label>
-                <select value={this.state.author} onChange={(event) => this.setState({author: event.target.value})}>
-                    <option value="SUN">SUN</option>
-                    <option value="Jack">Jack</option>
-                </select>
-                <button onClick={this.postDataHandler}>Add Post</button>
+                <button onClick={this.postDataHandler}>Add a Comment</button>
             </div>
         );
     }

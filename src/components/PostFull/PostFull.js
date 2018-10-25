@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from '../../axios';
 import './PostFull.css';
 import Comment from '../Comment/Comment';
+import CommentNew from '../../components/CommentNew/CommentNew';
 
 class PostFull extends Component {
     state = {
@@ -60,7 +61,7 @@ class PostFull extends Component {
         let post = <p style={{textAlign: 'center'}}>Please select a Post!</p>;
         
         if(this.props.id){
-            post = <p style={{textAlign: 'center'}}>Loading...</p>;
+            post = <p style={{textAlign: 'center'}}><div class="loader">Loading...</div></p>;
         }
 
         let comments = <p style={{textAlign:'center'}}>Something went wrong.</p>;
@@ -81,6 +82,9 @@ class PostFull extends Component {
                     <p className="Content">{this.state.loadedPost.body}</p>
                     <div className="Edit">
                         <button className="CommonButton" onClick={this.deletePostHandler}>Delete</button>
+                    </div>
+                    <div className="Comments">
+                        <CommentNew />
                     </div>
                     <div className="Comments">
                         {comments}

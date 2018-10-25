@@ -1,21 +1,25 @@
-.PostNew {
-    width: 100%;
-    margin: 10px auto;
-    border: 1px solid #eee;
-    box-shadow: 0 2px 3px #ccc;
+.CommentNew {
+    margin: 5px auto;
     text-align: left;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
-.PostNew label {
+.CommentNew h1{
+    font-size:20px;
+    padding: 0px;
+    margin:0px;
+    font-weight: 400;
+}
+
+.CommentNew label {
     display: block;
-    margin: 10px auto;
-    font-weight: bold;
+    margin: 5px auto;
+    color: gray;
 }
 
-.PostNew input,
-.PostNew textarea,
-.PostNew select {
+.CommentNew input,
+.CommentNew textarea,
+.CommentNew select {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -25,7 +29,11 @@
     margin: auto;
 }
 
-.PostNew button {
+.CommentNew textarea{
+    margin-top:5px;
+}
+
+.CommentNew button {
     border: none;
     cursor: pointer;
     outline: none;
@@ -38,8 +46,8 @@
     margin: 10px 0px;
 }
 
-.PostNew button:hover,
-.PostNew button:active {
+.CommentNew button:hover,
+.CommentNew button:active {
     color: white;
     background-color: black;
 }
